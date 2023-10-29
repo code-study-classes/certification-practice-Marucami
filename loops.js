@@ -41,17 +41,61 @@ function fibonacciSequence(N) {
   return current;
 }
 
-function sumOfPowers() {}
+function sumOfPowers(N) {
+  if (N <= 0) {
+    return 0;
+  }
+
+  let result = 0;
+
+  for (let i = 1; i <= N; i += 1) {
+    result += i ** i;
+  }
+
+  return result;
+}
 
 function remainingLength() {}
 
-function findExponent() {}
+function findExponent(N) {
+  if (N <= 0) {
+    return 'N должно быть больше 0';
+  }
+
+  let K = 0;
+  let number = N;
+  while (number > 1) {
+    number /= 2;
+    K += 1;
+  }
+  return K;
+}
 
 function findMinKAndSum() {}
 
 function calculateGCD() {}
 
-function findFibonacciIndex() {}
+function findFibonacciIndex(N) {
+  if (N <= 1) {
+    return 1;
+  }
+
+  let a = 1;
+  let b = 1;
+  let index = 2;
+
+  while (b < N) {
+    const next = a + b;
+    a = b;
+    b = next;
+    index += 1;
+  }
+
+  if (b === N) {
+    return index;
+  }
+  return `Число ${N} не является числом Фибоначчи.`;
+}
 
 export {
   sumOfSquares, power, factorialProduct, fibonacciSequence, sumOfPowers,
