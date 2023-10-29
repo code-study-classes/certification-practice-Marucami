@@ -36,8 +36,8 @@ describe('Group: loops', () => {
   test('task4', () => {
     expect(fibonacciSequence(1)).toBe(1);
     expect(fibonacciSequence(2)).toBe(1);
-    expect(fibonacciSequence(10)).toBe(89);
-    expect(fibonacciSequence(6)).toBe(13);
+    expect(fibonacciSequence(10)).toBe(55);
+    expect(fibonacciSequence(6)).toBe(8);
   });
 
   test('task5', () => {
