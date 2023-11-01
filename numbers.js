@@ -36,14 +36,14 @@ function getHundredsDigit(number) {
 
 function getFullHours(seconds) {
   if (typeof seconds !== 'number' || seconds < 0 || !Number.isInteger(seconds)) {
-    return '';
+    throw '';
   }
 
   return Math.floor(seconds / 3600);
 }
 
 function getDayOfWeek(dayOfYear) {
-  return (dayOfYear - 1 + 1) % 7;
+  return (dayOfYear) % 7;
 }
 
 function countSquares(A, B, C) {
