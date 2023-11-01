@@ -57,26 +57,26 @@ function describeNumber(n) {
   return 'Number is out of range';
 }
 
-function getDayName(dayNumber) {
+function getDayName (dayNumber) {
   switch (dayNumber) {
     case 1:
-      return 'monday';
+      return 'Monday';
     case 2:
-      return 'tuesday';
+      return 'Tuesday';
     case 3:
-      return 'wednesday';
+      return 'Wednesday';
     case 4:
-      return 'thursday';
+      return 'Thursday';
     case 5:
-      return 'friday';
+      return 'Friday';
     case 6:
-      return 'saturday';
+      return 'Saturday';
     case 7:
-      return 'sunday';
+      return 'Sunday';
     default:
       return 'Invalid day number.';
   }
-}
+};
 
 function convertToMeters(unitNumber, lengthInUnits) {
   switch (unitNumber) {

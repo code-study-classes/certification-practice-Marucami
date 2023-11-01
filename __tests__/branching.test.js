@@ -8,6 +8,7 @@ import {
   convertToMeters,
   describeAge,
   describeNumber2,
+  getDayName,
 } from '../branching';
 
 describe('Group: branching', () => {
