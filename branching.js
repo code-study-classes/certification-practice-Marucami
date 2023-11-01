@@ -57,7 +57,7 @@ function describeNumber(n) {
   return 'Number is out of range';
 }
 
-function getDayName (dayNumber) {
+function getDayName(dayNumber) {
   switch (dayNumber) {
     case 1:
       return 'Monday';
@@ -76,7 +76,7 @@ function getDayName (dayNumber) {
     default:
       return 'Invalid day number.';
   }
-};
+}
 
 function convertToMeters(unitNumber, lengthInUnits) {
   switch (unitNumber) {
